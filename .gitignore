@@ -49,6 +49,8 @@ jspm_packages/
 
 # Compiled files
 dist/
+*.d.ts
+*.js
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
