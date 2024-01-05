@@ -1,6 +1,6 @@
 import type {w3cwebsocket} from 'websocket';
 import {AuthenticationService} from "./authentication.service";
-import {Requests} from "../enums/requests.enum";
+import {Requests} from "../enums/internal/emotiv.requests";
 import {Subscribe} from "../models/requests/datasubscription/subscribe";
 import type {DataStream} from "../enums/data-stream.enum";
 import {SessionService} from "./session.service";

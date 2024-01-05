@@ -1,6 +1,6 @@
-import { CortexRequest } from "../../cortex-request";
-import { Emotiv } from "../../../enums/emotiv.consts";
-import { Requests } from "../../../enums/requests.enum";
+import { CortexRequest } from "../../internal/cortex-request";
+import { Emotiv } from "../../../enums/internal/emotiv.consts";
+import { Requests } from "../../../enums/internal/emotiv.requests";
 
 export class ActivateSession extends CortexRequest {
 

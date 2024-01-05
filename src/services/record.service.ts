@@ -1,7 +1,7 @@
 import type {w3cwebsocket} from 'websocket';
 import {AuthenticationService} from "./authentication.service";
 import {SessionService} from "./session.service";
-import {Requests} from "../enums/requests.enum";
+import {Requests} from "../enums/internal/emotiv.requests";
 import {CreateRecord} from "../models/requests/records/create-record";
 import {StopRecord} from "../models/requests/records/stop-record";
 

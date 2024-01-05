@@ -4,7 +4,7 @@ import type {Application} from "../models/application";
 import {RecordService} from "./record.service";
 import {AuthenticationService} from "./authentication.service";
 import {SessionService} from "./session.service";
-import {Requests} from "../enums/requests.enum";
+import {Requests} from "../enums/internal/emotiv.requests";
 import {InjectMarker} from "../models/requests/markers/inject-marker";
 
 export class MarkerService {

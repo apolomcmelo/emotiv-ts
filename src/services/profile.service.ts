@@ -1,7 +1,7 @@
 import type {w3cwebsocket} from 'websocket';
 import {HeadsetService} from "./headset.service";
 import {AuthenticationService} from "./authentication.service";
-import {Requests} from "../enums/requests.enum";
+import {Requests} from "../enums/internal/emotiv.requests";
 import {SetupProfile} from "../models/requests/bci/setup/setup-profile";
 import {ProfileActions} from "../enums/profile-action.enum";
 import {QueryProfile} from "../models/requests/bci/setup/query-profile";

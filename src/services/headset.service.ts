@@ -1,5 +1,5 @@
 import type {w3cwebsocket} from 'websocket';
-import {Requests} from "../enums/requests.enum";
+import {Requests} from "../enums/internal/emotiv.requests";
 import {QueryHeadsets} from "../models/requests/headsets/query-headsets";
 import {ControlDevice} from "../models/requests/headsets/control-device";
 

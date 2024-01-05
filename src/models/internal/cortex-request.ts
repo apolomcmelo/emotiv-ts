@@ -1,4 +1,4 @@
-import {Emotiv} from "../enums/emotiv.consts";
+import {Emotiv} from "../../enums/internal/emotiv.consts";
 import type {CortexParams} from "./cortex-params";
 
 export abstract class CortexRequest {

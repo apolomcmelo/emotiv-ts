@@ -1,7 +1,7 @@
 import {HeadsetService} from "./headset.service";
 import {AuthenticationService} from "./authentication.service";
 import {SessionService} from "./session.service";
-import {EmotivError} from "../enums/emotiv.error";
+import {EmotivError} from "../enums/internal/emotiv.error";
 import type {Application} from "../models/application";
 
 import WebSocket, {w3cwebsocket} from 'websocket';

@@ -5,7 +5,7 @@ import {ProfileService} from "./profile.service";
 import {DataStreamService} from "./data-stream.service";
 import {AuthenticationService} from "./authentication.service";
 import {SessionService} from "./session.service";
-import {Requests} from "../enums/requests.enum";
+import {Requests} from "../enums/internal/emotiv.requests";
 import {Training} from "../models/requests/bci/setup/training";
 import {TrainingCommands} from "../enums/training-command.enum";
 import {ProfileActions} from "../enums/profile-action.enum";

@@ -2,12 +2,13 @@
     "name": "emotiv-ts",
     "version": "0.0.1",
     "description": "A Typescript library that wraps the Cortex API functionalities to communicate with Emotiv headsets",
+    "author": "Apolo Mc Melo",
+    "license": "ISC",
     "scripts": {
         "start": "snowpack dev",
         "build": "snowpack build"
     },
-    "author": "Apolo Mc Melo",
-    "license": "ISC",
+    "main": "build/dist/index.js",
     "devDependencies": {
         "@snowpack/plugin-typescript": "^1.2.1",
         "@types/node": "^16.11.4",

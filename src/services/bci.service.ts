@@ -1,7 +1,7 @@
 import type {w3cwebsocket} from 'websocket';
 import {AuthenticationService} from "./authentication.service";
 import {SessionService} from "./session.service";
-import {Requests} from "../enums/requests.enum";
+import {Requests} from "../enums/internal/emotiv.requests";
 import {MentalCommandActiveAction} from "../models/requests/bci/mental-command-active-action";
 
 export class BCIService {

@@ -1,9 +1,9 @@
 import type {w3cwebsocket} from 'websocket';
 import {CreateSession} from "../models/requests/sessions/create-session";
-import type {CortexRequest} from "../models/cortex-request";
+import type {CortexRequest} from "../models/internal/cortex-request";
 import {ActivateSession} from "../models/requests/sessions/activate-session";
 import {CloseSession} from "../models/requests/sessions/close-session";
-import {Requests} from "../enums/requests.enum";
+import {Requests} from "../enums/internal/emotiv.requests";
 
 export class SessionService {
     socket: w3cwebsocket;

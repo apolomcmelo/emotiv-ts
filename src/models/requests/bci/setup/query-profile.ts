@@ -1,5 +1,5 @@
-import { CortexRequest } from "../../../cortex-request";
-import { Requests } from "../../../../enums/requests.enum";
+import { CortexRequest } from "../../../internal/cortex-request";
+import { Requests } from "../../../../enums/internal/emotiv.requests";
 
 export class QueryProfile extends CortexRequest {
 

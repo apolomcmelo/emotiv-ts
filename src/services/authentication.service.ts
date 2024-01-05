@@ -6,8 +6,8 @@ import {LicenseInfo} from "../models/requests/authentication/license-info";
 import {Access} from "../models/responses/authentication/access";
 import {Authorisation} from "../models/responses/authentication/authorisation";
 import {License} from "../models/responses/authentication/license";
-import type {CortexRequest} from "../models/cortex-request";
-import type {CortexResponse} from "../models/cortex-response";
+import type {CortexRequest} from "../models/internal/cortex-request";
+import type {CortexResponse} from "../models/internal/cortex-response";
 
 export class AuthenticationService {
     socket: w3cwebsocket

@@ -1,4 +1,4 @@
-import {CortexResponse} from "../../cortex-response";
+import {CortexResponse} from "../../internal/cortex-response";
 
 export class License extends CortexResponse {
     constructor(public isOnline: boolean, public license: LicenseDetail) {
