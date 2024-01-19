@@ -9,6 +9,7 @@
     },
     "type": "module",
     "main": "dist/index.js",
+    "keywords": ["emotiv", "cortex", "bci", "mental-command"],
     "devDependencies": {
         "@types/node": "^16.11.4",
         "@types/websocket": "^1.0.5",
