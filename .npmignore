@@ -1,0 +1,16 @@
+# .npmignore
+
+# Ignore all files and directories starting with "_"
+_
+# Ignore development and test files
+test/
+tests/
+*.test.*
+*.spec.*
+*.md
+*.log
+
+
+# Dependency directories
+node_modules/
+jspm_packages/

@@ -5,9 +5,9 @@
     "author": "Apolo Mc Melo",
     "license": "ISC",
     "scripts": {
-        "start": "snowpack dev",
-        "build": "snowpack build"
+        "build": "tsc"
     },
+    "type": "module",
     "main": "dist/index.js",
     "devDependencies": {
         "@types/node": "^16.11.4",
