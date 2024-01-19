@@ -1,6 +1,6 @@
 {
     "name": "emotiv-ts",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A Typescript library that wraps the Cortex API functionalities to communicate with Emotiv headsets",
     "author": "Apolo Mc Melo",
     "license": "ISC",
