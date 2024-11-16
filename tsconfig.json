@@ -8,8 +8,8 @@
         "forceConsistentCasingInFileNames": true,
         "moduleResolution": "node",
         "declaration": true,
-        "outDir": "./dist", // Change the outDir to "./dist"
-        "rootDir": "./src", // Change the rootDir to "./src"
+        "outDir": "./dist", // Changes the outDir to "./dist"
+        "rootDir": "./src", // Changes the rootDir to "./src"
     },
     "include": ["src"],
     "exclude": ["node_modules", "dist"]
