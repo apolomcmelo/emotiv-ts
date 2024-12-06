@@ -60,14 +60,14 @@ export class EmotivService {
                                 return sessionInfo
                             })
                         } else {
-                            console.log(EmotivError.ACCESS_NOT_ACCEPTED)
-                            throw new Error(EmotivError.ACCESS_NOT_ACCEPTED)
+                            console.error(EmotivError.ACCESS_NOT_ACCEPTED)
+                            reject(EmotivError.ACCESS_NOT_ACCEPTED)
                         }
                     })
                     .catch(error => {
                         // Thrown an error if user is not logged in CortexUI
                         console.error(EmotivError.ACCESS_NOT_GRANTED, error);
-                        throw new Error(EmotivError.ACCESS_NOT_GRANTED);
+                        reject(error)
                     })
             }
         })
