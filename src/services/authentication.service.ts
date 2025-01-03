@@ -41,8 +41,7 @@ export class AuthenticationService {
         return this.requestCortexAPI(
             this,
             new LicenseInfo(AuthenticationService.authorisation.token),
-            data =>
-                new License(data.result.isOnline, data.result.license)
+            data => new License(data.result.isOnline, data.result.license)
         )
     }
 
@@ -60,6 +59,11 @@ export class AuthenticationService {
 
                     if(data['id'] == request.id){
                         console.debug(`Cortex Response for the request ${request.method}:`, data)
+
+                        if(data['error']){
+                            throw new Error(data['error']['message'])
+                        }
+
                         resolve(onSuccess(data));
                     }
                 } catch (error) {
