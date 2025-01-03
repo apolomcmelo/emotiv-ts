@@ -39,6 +39,7 @@ export class BCIService {
                     }
                 } catch (error) {
                     console.error(error);
+                    reject(error)
                 }
             }
         })

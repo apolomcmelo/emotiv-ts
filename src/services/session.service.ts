@@ -28,11 +28,16 @@ export class SessionService {
                     if(data['id']==Requests.CREATE_SESSION){
                         console.debug("CreateSession response:", data)
 
+                        if(data['error']){
+                            throw new Error(data['error']['message'])
+                        }
+
                         SessionService.sessionId = data['result']['id'];
                         resolve(SessionService.sessionId);
                     }
                 } catch (error) {
                     console.error(error);
+                    reject(error)
                 }
             }
         })
@@ -63,6 +68,7 @@ export class SessionService {
                     }
                 } catch (error) {
                     console.error(error);
+                    reject(error)
                 }
             }
         })

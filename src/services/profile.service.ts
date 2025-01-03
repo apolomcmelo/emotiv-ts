@@ -34,6 +34,9 @@ export class ProfileService {
                     let data = JSON.parse(message.data as string);
 
                     if(data['id']==Requests.SETUP_PROFILE){
+                        if(data['error']){
+                            throw new Error(data['error']['message'])
+                        }
                         if(data['result']['action']==action){
                             console.log('SETUP PROFILE -------------------------------------')
                             console.log(message.data)
@@ -44,6 +47,7 @@ export class ProfileService {
 
                 } catch (error) {
                     console.error(error);
+                    reject(error)
                 }
             }
         })
@@ -60,11 +64,16 @@ export class ProfileService {
             context.socket.send(JSON.stringify(queryProfileRequest))
             context.socket.onmessage = (message) => {
                 try {
-                    if(JSON.parse(message.data as string)['id']==Requests.QUERY_PROFILE){
+                    let data = JSON.parse(message.data as string);
+                    if(data['id'] == Requests.QUERY_PROFILE){
+                        if(data['error']){
+                            throw new Error(data['error']['message'])
+                        }
                         resolve(message.data);
                     }
                 } catch (error) {
                     console.error(error);
+                    resolve(error)
                 }
             }
         })
